@@ -3,7 +3,7 @@ import AddTask from "./components/AddTask";
 import Tasks from "./components/Tasks";
 import { useEffect } from "react";
 import Title from "./components/Title";
-import WaterMark from "./components/waterMark";
+import WaterMark from "./components/WaterMark";
 
 function App() {
   const [tasks, setTasks] = useState(
