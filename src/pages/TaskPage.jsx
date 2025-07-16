@@ -1,6 +1,7 @@
 import { ChevronLeft } from "lucide-react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import Title from "../components/Title";
+import WaterMark from "../components/WaterMark";
 
 function TaskPage() {
   const [searchParams] = useSearchParams(); // Conseguir os valores através da URL nos query params
@@ -31,6 +32,7 @@ function TaskPage() {
           <p className="text-center">{description}</p>
         </div>
       </div>
+      <WaterMark />
     </div>
   );
 }
