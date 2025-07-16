@@ -29,7 +29,7 @@ function AddTask({ onAddTaskClick }) {
           setTitle("");
           setDescription("");
         }}
-        className="p-2 rounded-md text-white font-bold bg-cyan-900"
+        className="p-2 rounded-md text-white font-bold bg-cyan-900 active:scale-95 transition"
       >
         Adicionar
       </button>

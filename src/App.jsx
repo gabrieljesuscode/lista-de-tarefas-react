@@ -3,6 +3,7 @@ import AddTask from "./components/AddTask";
 import Tasks from "./components/Tasks";
 import { useEffect } from "react";
 import Title from "./components/Title";
+import WaterMark from "./components/waterMark";
 
 function App() {
   const [tasks, setTasks] = useState(
@@ -72,8 +73,8 @@ function App() {
   }
 
   return (
-    <div className="w-screen h-screen bg-slate-500 flex justify-center p-6">
-      <div className="w-[500px] space-y-4">
+    <div className=" w-screen min-h-screen bg-slate-500 flex justify-center p-6">
+      <div className="w-[500px] space-y-4 mb-28">
         <Title>Gerenciador de Tarefas</Title>
 
         <AddTask onAddTaskClick={onAddTaskClick} />
@@ -84,6 +85,7 @@ function App() {
           deleteTask={deleteTask}
         />
       </div>
+      <WaterMark />
     </div>
   );
 }
